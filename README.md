@@ -14,7 +14,7 @@ In the project directory, I've tried to clone Co-schedule application. User can 
 
 ## Sneak Peak
 #### Landing Page
-<img src="\Images\Screenshot (1229).png"/>
+<img src="Images/Screenshot (1229).png"/>
 <img src="\Images\Screenshot (1236).png"/>
 
 #### Sign In Page
