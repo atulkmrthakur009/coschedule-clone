@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoSchedule</title>
+    <link rel="stylesheet" href="\CSS\schedule.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel = "icon" href =  "https://ga0.imgix.net/logo/o/101415-1504014814-6921194?ixlib=rb-1.0.0&ch=Width%2CDPR&auto=format" type = "image/x-icon">
+    <link rel = "icon" href =  "https://ga0.imgix.net/logo/o/101415-1504014814-6921194?ixlib=rb-1.0.0&ch=Width%2CDPR&auto=format" 
+    type = "image/x-icon">
+</head>
+<body>
+    <div id="cont">
+        <div id="navigation">
+            <i class="fa fa-bars" aria-hidden="true" onclick="showUser()"></i>
+            <i class="fa fa-home"></i>
+            <p>Home</p>
+            <i style="margin-left: 65%;color:#daa1a0 ;"class="fa fa-comment" aria-hidden="true"></i>
+            <p style="cursor: pointer ;color:#daa1a0; font-size: 14px; font-weight: 200;">Have Questions? Let's chat! <span id="mark">?</span></span></p>
+            <i class="fa fa-question" aria-hidden="true"></i>
+            <i class="fa fa-bell" aria-hidden="true"></i>
+        </div>
+        <div id="wrapper" onclick="hideUser()">
+            <div id="pops">
+                <div id="ab">
+                    <div id="initial"></div>
+                    <p id="username"></p>
+                </div>
+                <hr>
+                <div id="bc">
+                    <i style="color: #F2C069;"class="fa fa-trophy" aria-hidden="true"></i>
+                    <p>Getting Started</p>
+                    <p>You have 3 milestones left to complete</p>
+                </div>
+                <div id="cd">
+                    <i class="fa fa-home"></i>
+                    <p>HOME</p>
+                </div>
+                <div id="de">
+                    <i class="fa fa-calendar"></i>
+                    <p>Calendar</p>
+                </div>
+            </div>
+            <div id="leftside">
+                <div id="upper">
+                    
+                    <h3><i style= "color: #F2C069; margin-right: 10px;"class="fa fa-trophy" aria-hidden="true"></i>Getting started</h3>
+                    <div id="tagline">
+                        <p>Successful marketers complete these milestones within their first 30 days.</p>
+                    </div>
+                    <div id="twin">
+                        <div id="griding">
+                            <div class="flexly">
+                                <div style="background-color: #8ac884;"><i class="fa fa-check"></i></div>
+                                <div>
+                                <p>View the Getting Started Guide:</p>
+                                <p>Get tips & best practices to organize all of your marketing on your new calendar.</p>
+                               </div>
+                               </div>
+
+                            <div class="flexly">
+                                <div>0/1</div>
+                                <div>
+                                <p>Schedule a project 7+ days in Advance</p>
+                                <p >Add content to your calendar a week in advance to see all of your upcoming work.</p>
+                            </div>
+                        </div>
+                            <div class="flexly">
+                                <div>0/3</div>
+                                <div>
+                                <p>Add 3 Unique Project Types To Yout Calendar</p>
+                                <p>Transition all in-progress work to your calendar-emails, blog posts, events, & more!</p>
+                            </div>  
+                        </div>
+                            <div class="flexly">
+                                <div>0/1</div>
+                                <div>
+                                <p>Connect 1 Or More Integrations</p>
+                                <p >Sync content from your favorite tools like WordPress, Mailchimp, social, & more.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="percent">
+                            <img  class="pics"src="\Images\schedule1.jpeg"/>
+                            <p>Setup Progress</p>
+                        </div>
+                    </div>
+                </div>
+                <div id ="middle">
+                    <img src="\Images\Screenshot (1222).png" alt ="image">
+                </div>
+                <div id="lower">
+                    <div id="addnewtask">
+                        <i></i>
+                        <h3> ✔ My Upcoming</h3>
+                        <button id="funs" >+ New Task</button>
+                       
+                    </div>
+                    <div id ="upcomings"></div>
+                    <hr/>
+                               
+                    <div id="full_block">
+                        <div id="day_block">
+                            <div  id="day">TODAY</div>
+                            <div class="line"><hr style="width:600px;"></div>
+                          <div><button id="btn">+</button></div> 
+                        </div>
+                        <div id="button"> 
+                             <input type="text" id="left" name="left" oninput="right.value = left.value; return true;" />
+                        </div>
+                    </div>
+                    <div id="full_block">
+                        <div id="day_block">
+                            <div  id="day">TOMORROW</div>
+                            <div class="line"><hr style="width:600px;"></div>
+                          <div><button id="btn">+</button></div> 
+                        </div>
+                        <div id="button"> 
+                             <input type="text" id="left" name="left" oninput="right.value = left.value; return true;" />
+                        </div>
+                    </div>
+                    <div id="full_block">
+                        <div id="day_block">
+                            <div  id="day">SUNDAY</div>
+                            <div class="line"><hr style="width:600px;"></div>
+                          <div><button id="btn">+</button></div> 
+                        </div>
+                        <div id="button"> 
+                             <input type="text" id="left" name="left" oninput="right.value = left.value; return true;" />
+                        </div>
+                    </div>
+                    <div id="full_block">
+                        <div id="day_block">
+                            <div  id="day">MONDAY</div>
+                            <div class="line"><hr style="width:600px;"></div>
+                          <div><button id="btn">+</button></div> 
+                        </div>
+                        <div id="button"> 
+                             <input type="text" id="left" name="left" oninput="right.value = left.value; return true;" />
+                        </div>
+                    </div>
+                    <div id="full_block">
+                        <div id="day_block">
+                            <div  id="day">TUESDAY</div>
+                            <div class="line"><hr style="width:600px;"></div>
+                          <div><button id="btn">+</button></div> 
+                        </div>
+                        <div id="button"> 
+                             <input type="text" id="left" name="left" oninput="right.value = left.value; return true;" />
+                        </div>
+                    </div>
+                    <div id="full_block">
+                        <div id="day_block">
+                            <div  id="day">WEDNESDAY</div>
+                            <div class="line"><hr style="width:600px;"></div>
+                          <div><button id="btn">+</button></div> 
+                        </div>
+                        <div id="button"> 
+                             <input type="text" id="left" name="left" oninput="right.value = left.value; return true;" />
+                        </div>
+                    </div>
+                    <div id="full_block">
+                        <div id="day_block">
+                            <div  id="day">THURSDAY</div>
+                            <div class="line"><hr style="width:600px;"></div>
+                          <div><button id="btn">+</button></div> 
+                        </div>
+                        <div id="button"> 
+                             <input type="text" id="left" name="left" oninput="right.value = left.value; return true;" />
+                        </div>
+                    </div>
+                    <div id="full_block">
+                        <div id="day_block">
+                            <div  id="day">FRIDAY</div>
+                            <div class="line"><hr style="width:600px;"></div>
+                          <div><button id="btn">+</button></div> 
+                        </div>
+                        <div id="button"> 
+                             <input type="text" id="left" name="left" oninput="right.value = left.value; return true;" />
+                        </div>
+                    </div>
+                    <div id="full_block">
+                        <div id="day_block">
+                            <div  id="day">SATURDAY</div>
+                            <div class="line"><hr style="width:600px;"></div>
+                          <div><button id="btn">+</button></div> 
+                        </div>
+                        <div id="button">
+                             <input type="text" id="left" name="left" oninput="right.value = left.value; return true;" />
+                        </div>
+                    </div>     
+                </div>
+            </div>
+            <div id="rightside">
+                <div id="choose">
+                    <p id="pone" onclick="showMeNotification()">Notifications</p>
+                    <p id="ptwo" onclick="showMeRecents()">Recent</p>
+                    <p id="pthree" onclick="showMeFav()">Favourites</p>
+                </div>
+                <hr/>
+                <div id="datas">
+                    <div id="notify">
+                        <img src="https://app.coschedule.com/img/notifications-empty-1888c22fd951298ea32d6524dcd478f6.png"/>
+                        <h1>All Caught Up!</h1>
+                        <p>No new Notifications</p>
+                    </div>
+                    <div id="recent">
+                        <img src="\Images\recent.jpeg"/>
+                        <p>Projects and campaigns that you have recently visited will appear here</p>
+                    </div>
+                    <div id="fav">
+                        <img src="\Images\favourites.jpeg"/>
+                        <p>Favorite projects and campaigns that you work on frequently and they will appear here.</p>
+                    </div>
+                    <di id="task">
+                        <p>This task is only visible to you.</p>
+                    </div>
+                    <div id="showData">
+                    </div>
+                    
+                    <div id="assigned">
+                        <hr/>
+                        <p class="gray">ASSIGNED TO</p>
+                        <p id="login"></p>
+                        <hr/>
+                        <p class="gray">DUE</p>
+                        <select id="dropDown" onchange="schedule(event)">
+                            <option onclick="showDate()">Custom Date</option>
+                            <option >No Due Date</option>
+                        </select>
+                        <!-- <div id="ii"></div> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="\JS\schedule.js"></script>
+</body>
+</html>
