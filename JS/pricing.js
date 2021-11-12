@@ -10,5 +10,8 @@ window.onload = () =>{
     document.getElementById("price2").style.display="none";
     document.getElementById("price1").style.display="block";
   }
+function getStarted(){
+    window.location.href="signup.html";
+  }
   
   
